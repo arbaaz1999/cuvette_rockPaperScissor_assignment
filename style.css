@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #0e1a44 0%, rgba(52, 96, 250, 0.68) 100%);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 10px;
+  width: 50%;
+}
+
+.headings h2 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 42px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.score-box .score-card {
+  min-width: 20%;
+  height: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.score-box .score-card p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.score-box .score-card h2 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.play {
+  background: url("./assets/bg-triangle.svg");
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 313px;
+  height: 278px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sciccor {
+  border: 16px solid #cc00ff;
+  transform: translate(-2rem, -2rem);
+}
+
+.rock {
+  border: 16px solid #ffd600;
+  transform: translate(6rem, 2rem);
+}
+
+.paper {
+  border: 16px solid #ff4370;
+  transform: translate(5rem, -2rem);
+}
+
+.play .btn {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play .btn:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
+
+.rule-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.rule-box .rules {
+  display: none;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #08143e;
+  border: 7px solid #465ba7;
+  border-radius: 15px;
+}
+
+.rule-box .rules ul {
+  list-style-type: square;
+}
+
+.rule-box .rules ul li {
+  line-height: 25px;
+  text-align: justify;
+}
+
+.rule-box .rules .close-button {
+  background-color: #ff0000;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  border-radius: 50%;
+  border: 5px solid #465ba7;
+  position: absolute;
+  transform: translate(17.5rem, -3rem);
+  cursor: pointer;
+}
+
+.rule-box .rules h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.rule-box .rules-button {
+  padding: 5px 25px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 100px auto;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.result-section .myPick,
+.computersPick,
+.result {
+  text-align: center;
+}
+
+.result-section .myPick h3,
+.computersPick h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.result-section .myPick .pickedBtn,
+.computersPick .pickedBtn {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.result-section .myPick .pickedRock,
+.computersPick .pickedRock {
+  border: 16px solid #ffd600;
+}
+
+.result-section .myPick .pickedPaper,
+.computersPick .pickedPaper {
+  border: 16px solid #ff4370;
+}
+
+.result-section .myPick .pickedSciccor,
+.computersPick .pickedSciccor {
+  border: 16px solid #cc00ff;
+}
+
+.result-section .result {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.result-section .result h2,
+p {
+  margin: 0;
+  line-height: 25px;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+.result-section .result h2 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 46px;
+}
+
+.result-section .result p {
+  font-size: 25px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.result-section .result button {
+  background-color: #fff;
+  color: #6b6b6b;
+  font-weight: 600;
+  margin-top: 20px;
+  border: 9px solid #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.result-section .result .try-again {
+  display: none;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  animation-name: blinking;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 420px) {
+}

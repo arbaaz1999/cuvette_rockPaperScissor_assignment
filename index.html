@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock | Paper | Scissor</title>
+  </head>
+  <body>
+    <div class="score-box">
+      <div class="headings">
+        <h2>ROCK</h2>
+        <h2>PAPER</h2>
+        <h2>SCISSOR</h2>
+      </div>
+      <div class="score-card">
+        <p>
+          Your <br />
+          Score
+        </p>
+        <h2 id="score">0</h2>
+      </div>
+    </div>
+    <div class="play-box">
+      <div class="play" id="play">
+        <button
+          class="btn sciccor"
+          id="sciccor"
+          value="sciccor"
+          name="sciccor"
+          onclick="selectMyChoice('sciccor')"
+        >
+          <img src="./assets/icon-scissors.svg" alt="scissor" />
+        </button>
+        <button
+          class="btn paper"
+          id="paper"
+          value="paper"
+          name="paper"
+          onclick="selectMyChoice('paper')"
+        >
+          <img src="./assets/icon-paper.svg" alt="paper" />
+        </button>
+        <button
+          class="btn rock"
+          id="rock"
+          value="rock"
+          name="rock"
+          onclick="selectMyChoice('rock')"
+        >
+          <img src="./assets/icon-rock.svg" alt="rock" />
+        </button>
+      </div>
+      <div class="result-section" style="display: none" id="resultSection">
+        <div class="myPick">
+          <h3>YOU PICKED</h3>
+          <button class="pickedBtn" id="myPick">
+            <img src="./assets/icon-paper.svg" />
+          </button>
+        </div>
+        <div class="result">
+          <h2 id="result">YOU WIN</h2>
+          <p>Against PC</p>
+          <button id="playAgain">PLAY AGAIN</button>
+          <div class="try-again" id="tryAgain">TRY AGAIN</div>
+        </div>
+        <div class="computersPick">
+          <h3>COMPUTER PICKED</h3>
+          <button class="pickedBtn" id="computersPick">
+            <img src="./assets/icon-rock.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="rule-box">
+      <div class="rules" id="rules">
+        <button class="close-button" id="closeRules">X</button>
+        <h2>Game Rules</h2>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beats paper and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you'll count off 'rock, paper, scissors,
+            shoot' or just 'rock, paper, scissors.'
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decissions or simply play
+            to pass the time.
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand.
+          </li>
+        </ul>
+      </div>
+      <div class="rules-button" id="showRules">RULES</div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
