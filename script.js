@@ -50,7 +50,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Oops! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': TIE')
         myPick.innerHTML = `<img src="./assets/icon-rock.svg" />`
+        myPick.style.border = '16px solid #ffd600'
         computersPick.innerHTML = `<img src="./assets/icon-rock.svg" />`
+        computersPick.style.border = '16px solid #ffd600'
         result.innerText = 'Oops! TIE'
         tryAgain.style.display = 'block'
 
@@ -58,7 +60,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Oops! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': You Lose')
         myPick.innerHTML = `<img src="./assets/icon-rock.svg" />`
+        myPick.style.border = '16px solid #ffd600'
         computersPick.innerHTML = `<img src="./assets/icon-paper.svg" />`
+        computersPick.style.border = '16px solid #ff4370'
         result.innerText = 'YOU LOSE'
         tryAgain.style.display = 'block'
 
@@ -66,7 +70,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Hurray! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': You Win')
         myPick.innerHTML = `<img src="./assets/icon-rock.svg" />`
+        myPick.style.border = '16px solid #ffd600'
         computersPick.innerHTML = `<img src="./assets/icon-scissors.svg" />`
+        computersPick.style.border = '16px solid #cc00ff'
         result.innerText = 'YOU WIN'
         score.innerText++
         tryAgain.style.display = 'none'
@@ -75,7 +81,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Hurray! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': You Win')
         myPick.innerHTML = `<img src="./assets/icon-paper.svg" />`
+        myPick.style.border = '16px solid #ff4370'
         computersPick.innerHTML = `<img src="./assets/icon-rock.svg" />`
+        computersPick.style.border = '16px solid #ffd600'
         result.innerText = 'YOU WIN'
         score.innerText++
         tryAgain.style.display = 'none'
@@ -84,7 +92,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Oops! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': TIE')
         myPick.innerHTML = `<img src="./assets/icon-paper.svg" />`
+        myPick.style.border = '16px solid #ff4370'
         computersPick.innerHTML = `<img src="./assets/icon-paper.svg" />`
+        computersPick.style.border = '16px solid #ff4370'
         result.innerText = 'Oops! TIE'
         tryAgain.style.display = 'block'
 
@@ -92,7 +102,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Oops! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': You Lose')
         myPick.innerHTML = `<img src="./assets/icon-paper.svg" />`
+        myPick.style.border = '16px solid #ff4370'
         computersPick.innerHTML = `<img src="./assets/icon-scissors.svg" />`
+        computersPick.style.border = '16px solid #cc00ff'
         result.innerText = 'YOU LOSE'
         tryAgain.style.display = 'block'
 
@@ -100,7 +112,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Oops! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': You Lose')
         myPick.innerHTML = `<img src="./assets/icon-scissors.svg" />`
+        myPick.style.border = '16px solid #cc00ff'
         computersPick.innerHTML = `<img src="./assets/icon-rock.svg" />`
+        computersPick.style.border = '16px solid #ffd600'
         result.innerText = 'YOU LOSE'
         tryAgain.style.display = 'block'
 
@@ -108,7 +122,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Hurray! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': You Win')
         myPick.innerHTML = `<img src="./assets/icon-scissors.svg" />`
+        myPick.style.border = '16px solid #cc00ff'
         computersPick.innerHTML = `<img src="./assets/icon-paper.svg" />`
+        computersPick.style.border = '16px solid #ff4370'
         result.innerText = 'YOU WIN'
         score.innerText++
         tryAgain.style.display = 'none'
@@ -117,7 +133,9 @@ const selectMyChoice = (btnValue) => {
 
         console.log('Oops! you choose ', myChoice, ' and computer choose ', compSelectedChoice, ': TIE')
         myPick.innerHTML = `<img src="./assets/icon-scissors.svg" />`
+        myPick.style.border = '16px solid #cc00ff'
         computersPick.innerHTML = `<img src="./assets/icon-scissors.svg" />`
+        computersPick.style.border = '16px solid #cc00ff'
         result.innerText = 'Oops! TIE'
         tryAgain.style.display = 'block'
 

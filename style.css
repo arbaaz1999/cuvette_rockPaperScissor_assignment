@@ -156,7 +156,7 @@ body {
 .result-section {
   display: flex;
   flex-direction: row;
-  max-width: 90%;
+  max-width: 50%;
   margin: 100px auto;
   align-content: center;
   justify-content: space-between;
@@ -184,21 +184,6 @@ body {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.result-section .myPick .pickedRock,
-.computersPick .pickedRock {
-  border: 16px solid #ffd600;
-}
-
-.result-section .myPick .pickedPaper,
-.computersPick .pickedPaper {
-  border: 16px solid #ff4370;
-}
-
-.result-section .myPick .pickedSciccor,
-.computersPick .pickedSciccor {
-  border: 16px solid #cc00ff;
 }
 
 .result-section .result {
@@ -260,5 +245,21 @@ p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
+  .result-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .result-section .myPick {
+    order: 1;
+  }
+  .result-section .computersPick {
+    order: 2;
+  }
+  .result-section .result {
+    order: 3;
+    flex-grow: 1;
+    margin-top: 22px;
+  }
 }
